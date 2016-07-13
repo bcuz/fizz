@@ -1,13 +1,13 @@
 $(function() {
   var body = $("body");
 
-  var to_this = parseInt(prompt("Pick an integer greater than 0 to fizz: "));
+  var to_this = prompt("Pick an integer greater than 0 to fizz: ");
 
   var no_number = true;
   do {
 
     if (isNaN(to_this) === true || to_this <= 0) {
-      to_this = parseInt(prompt("Invalid. Pick an integer greater than 0: "));
+      to_this = prompt("Invalid. Pick an integer greater than 0: ");
     }
     else {
       no_number = false;
