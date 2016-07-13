@@ -7,7 +7,7 @@ $(function() {
   do {
 
     if (isNaN(to_this) === true || to_this <= 0) {
-      var to_this = parseInt(prompt("Can you read?"));
+      var to_this = parseInt(prompt("Can you read? Pick number greater than 0: "));
     }
     else {
       no_number = false;
