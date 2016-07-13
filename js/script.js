@@ -1,18 +1,19 @@
 $(function() {
   var body = $("body");
 
-  var to_this = parseInt(prompt("How high? "));
+  var to_this = parseInt(prompt("Pick number greater than 0: "));
 
   var no_number = true;
   do {
 
-    if (isNaN(to_this) === true) {
-      var to_this = parseInt(prompt("Numbers only, chief. Try again. "));
-    } else {
+    if (isNaN(to_this) === true || to_this <= 0) {
+      var to_this = parseInt(prompt("Can you read?"));
+    }
+    else {
       no_number = false;
     }
 
-  } while (no_number)
+  } while (no_number);
 
 
 for (var i = 1; i <= to_this; i++) {
