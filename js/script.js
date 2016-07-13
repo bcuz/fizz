@@ -5,10 +5,10 @@ for (var i = 0; i <= 30; i++) {
      {
       $("body").append("<p>Fizzbuzz</p>");
      } else {
-        $("body").append("<p>" + "fizz" + "</p>");
+        $("body").append("<p>fizz</p>");
      }
   } else if (i % 5 === 0) {
-    $("body").append("<p>" + "buzz" + "</p>");
+    $("body").append("<p>buzz</p>");
   } else {
     $("body").append("<p>" + i + "</p>");
   }
