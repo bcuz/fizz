@@ -1,7 +1,7 @@
 $(function() {
   var body = $("body");
 
-  var to_this = parseInt(prompt("Pick a number greater than 0: "));
+  var to_this = parseInt(prompt("Pick a number greater than 0 to fizz: "));
 
   var no_number = true;
   do {
