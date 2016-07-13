@@ -3,9 +3,17 @@ $(function() {
 
   var to_this = parseInt(prompt("How high? "));
 
-  if (isNaN(to_this) === true) {
-    alert("Numbers only, chief.")
-  }
+  var no_number = true;
+  do {
+
+    if (isNaN(to_this) === true) {
+      var to_this = parseInt(prompt("Numbers only, chief. Try again. "));
+    } else {
+      no_number = false;
+    }
+
+  } while (no_number)
+
 
 for (var i = 0; i <= 30; i++) {
   if (i % 3 === 0) {
