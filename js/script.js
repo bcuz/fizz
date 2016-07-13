@@ -15,7 +15,7 @@ $(function() {
   } while (no_number)
 
 
-for (var i = 0; i <= 30; i++) {
+for (var i = 1; i <= to_this; i++) {
   if (i % 3 === 0) {
     if (i % 5 === 0)
      {
