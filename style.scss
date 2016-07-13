@@ -17,6 +17,12 @@
  * See notes below. ***
  */
 
+ div {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+ }
+
 .example-style1 {
  /*
   * Styles for mobile size 320 and larger
