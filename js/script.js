@@ -1,7 +1,10 @@
 $(function() {
   var div = $("div");
 
-  var to_this = prompt("Pick an integer greater than 0 to fizz: ");
+  var to_this = parseInt(prompt("Pick an integer greater than 0 to fizz: "));
+  console.log(typeof to_this);
+  console.log("Raw print: " + to_this);
+
 
   var no_number = true;
   do {
