@@ -1,6 +1,7 @@
 $(function() {
   var div = $("div");
 
+  // same thing happens with + in place of parseInt
   var to_this = parseInt(prompt("Pick an integer greater than 0 to fizz: "));
   console.log(typeof to_this);
   console.log("Raw print: " + to_this);
