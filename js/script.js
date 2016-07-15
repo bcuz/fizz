@@ -2,8 +2,7 @@ $(function() {
   var div = $("div");
 
   // same thing happens with + in place of parseInt
-  // isNaN(parseInt("10")) returns false
-  var to_this = parseInt(prompt("Pick an integer greater than 0 to fizz: "));
+  var to_this = +parseInt(prompt("Pick an integer greater than 0 to fizz: "));
   var type = typeof to_this
   console.log("Type: " + type);
   console.log("Raw print: " + to_this);
