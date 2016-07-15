@@ -1,7 +1,6 @@
 $(function() {
   var div = $("div");
 
-  // same thing happens with + in place of parseInt
   var number = parseInt(prompt("Pick an integer greater than 0 to fizz: "));
 
   var not_number = true;
