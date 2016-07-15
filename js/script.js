@@ -33,7 +33,7 @@ $(function() {
 
   }
 
-  }
+  };
 
   fizz_buzz(number);
 
