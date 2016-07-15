@@ -2,35 +2,39 @@ $(function() {
   var div = $("div");
 
   // same thing happens with + in place of parseInt
-  var to_this = parseInt(prompt("Pick an integer greater than 0 to fizz: "));
+  var number = parseInt(prompt("Pick an integer greater than 0 to fizz: "));
 
-  var no_number = true;
+  var not_number = true;
   do {
 
-    if (isNaN(to_this) === true || to_this <= 0) {
-      to_this = prompt("Invalid. Pick an integer greater than 0: ");
+    if (isNaN(number) === true || number <= 0) {
+      number = prompt("Invalid. Pick an integer greater than 0: ");
     }
     else {
-      no_number = false;
+      not_number = false;
     }
 
-  } while (no_number);
+  } while (not_number);
 
+  var fizz_buzz = function(last_number) {
+  for (var i = 1; i <= last_number; i++) {
+    if (i % 3 === 0) {
+      if (i % 5 === 0)
+       {
+        div.append("<p>Fizzbuzz</p>");
+       } else {
+          div.append("<p>fizz</p>");
+       }
+    } else if (i % 5 === 0) {
+      div.append("<p>buzz</p>");
+    } else {
+      div.append("<p>" + i + "</p>");
+    }
 
-for (var i = 1; i <= to_this; i++) {
-  if (i % 3 === 0) {
-    if (i % 5 === 0)
-     {
-      div.append("<p>Fizzbuzz</p>");
-     } else {
-        div.append("<p>fizz</p>");
-     }
-  } else if (i % 5 === 0) {
-    div.append("<p>buzz</p>");
-  } else {
-    div.append("<p>" + i + "</p>");
   }
 
-}
+  }
+
+  fizz_buzz(number);
 
 });
